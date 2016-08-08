@@ -1,10 +1,3 @@
-<style>
-  .starter-template {
-    padding: 40px 15px;
-    text-align: center;
-  }
-</style>
-
 <template>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
