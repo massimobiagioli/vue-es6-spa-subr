@@ -9,13 +9,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" v-link="{ path: '/' }">VUE SPA</a>
+        <a class="navbar-brand" v-link="{path: '/'}">VUE SPA</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a v-link="{ path: '/home' }">Home</a></li>
-          <li><a v-link="{ path: '/about' }">About</a></li>
-          <li><a v-link="{ path: '/contact' }">Contact</a></li>
+          <li v-link="{path: '/home', activeClass: 'active'}"><a v-link="{path: '/home'}">Home</a></li>
+          <li v-link="{path: '/about', activeClass: 'active'}"><a v-link="{path: '/about'}">About</a></li>
+          <li v-link="{path: '/contact', activeClass: 'active'}"><a v-link="{path: '/contact'}">Contact</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->

@@ -21,15 +21,13 @@
 </template>
 
 <script>
+import {increment, navigateTo} from '../actions'
+
 export default {
   vuex: {
     actions: {
-      increment: ({dispatch, state}) => {
-        dispatch('INCREMENT', 1);
-      },
-      navigateTo: ({dispatch, state}, path) => {
-        dispatch('NAVIGATE_TO', path);
-      }
+      increment,
+      navigateTo
     },
     getters: {
       counter: state => state.count

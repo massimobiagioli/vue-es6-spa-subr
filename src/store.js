@@ -5,7 +5,8 @@ import router from './router'
 Vue.use(Vuex);
 
 const state = {
-  count: 0
+  count: 0,
+  currentPerson: {}
 };
 
 export const mutations = {
@@ -14,6 +15,9 @@ export const mutations = {
   },
   NAVIGATE_TO (state, path) {
     router.go({path});
+  },
+  SET_CURRENT_PERSON (state, data) {
+    state.currentPerson = data;    
   }
 }
 
