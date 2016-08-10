@@ -10,14 +10,14 @@ const state = {
 };
 
 export const mutations = {
-  INCREMENT (state, amount) {
+  INCREMENT(state, amount) {
     state.count = state.count + amount;
   },
-  NAVIGATE_TO (state, path) {
-    router.go({path});
+  NAVIGATE_TO(state, path) {
+    router.go({ path });
   },
-  SET_CURRENT_PERSON (state, data) {
-    state.currentPerson = data;    
+  SET_CURRENT_PERSON(state, data) {
+    state.currentPerson = data;
   }
 }
 
